@@ -27,18 +27,24 @@ fetch('https://pokeapi.co/api/v2/pokemon/')
             getData(ele.url)
             .then(data => {
                 let section = document.createElement('div');
+                section.className = "pokeStats";
+
+                let paragraph1 = document.createElement('p');
+                paragraph1.innerHTML = data.name.charAt(0).toUpperCase() + data.name.slice(1);
+                section.append(paragraph1);
+                let paragraph2 = document.createElement('p');
+                paragraph2.innerHTML = "Shiny " + data.name.charAt(0).toUpperCase() + data.name.slice(1);
+                section.append(paragraph2);
+
                 let image1 = document.createElement('img');
                 let image2 = document.createElement('img');
                 image1.src = data.sprites.front_default;
+                image1.className = "image";
                 section.append(image1);
                 image2.src = data.sprites.front_shiny;
                 section.append(image2);
-                let paragraph1 = document.createElement('p');
-                paragraph1.innerHTML = data.name.toUpperCase();
-                section.append(paragraph1);
-                let paragraph2 = document.createElement('p');
-                paragraph2.innerHTML = "SHINY " + data.name.toUpperCase();
-                section.append(paragraph2);
+                image2.className = "image";
+                
                 pokedex.appendChild(section);
             })
         })

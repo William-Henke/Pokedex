@@ -7,22 +7,25 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1 id="title">Pokedex</h1>
-    </header>
-    <container>
-        <div>
-            <input id="searchBar" type="text">
-            <button id="searchButton">Search</button>
-        </div>
+    <container id="largestContainer" class="container">
+        <header id="header" class="container">
+            <h1 id="title">Pokedex</h1>
+        </header>
+        <container id="pokeSearch" class="container">
+            <div>
+                <input id="searchBar" type="text">
+                <button id="searchButton">Search</button>
+            </div>
+        </container>
+        <container id="pokePart" class="container">
+            <div id="pokedex">
+                <div></div>
+                <div></div>
+            </div>
+        </container>
+        <footer id="footer" class="container"></footer>
     </container>
-    <container>
-        <div id="pokedex">
-            <div></div>
-            <div></div>
-        </div>
-    </container>
-    <footer></footer>
+
 
     <script src="script.js"></script>
 </body>

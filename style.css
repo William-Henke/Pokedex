@@ -1,0 +1,19 @@
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pokeStats {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.image {
+    width: 50%;
+    height: auto;
+    align-self: center;
+}
