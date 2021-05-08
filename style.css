@@ -4,16 +4,32 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.pokeChart {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;    
+    border-color: black;
+    border-style: solid;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
 }
 
 .pokeStats {
+    width: 65%;
+    height: auto;
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    text-align: center;
 }
 
 .image {
-    width: 50%;
+    width: 75%;
     height: auto;
     align-self: center;
 }
