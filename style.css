@@ -4,8 +4,6 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    font-size: xx-large;
-    font-weight: bold;
 }
 
 .pokeChart {
@@ -33,3 +31,13 @@
     height: auto;
     align-self: center;
 }
+
+.paragraph {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.informationButton {
+
+}
+
