@@ -1,39 +1,44 @@
+* {
+    background-color: lightgreen;
+}
+
 .container {
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    /* background-color: lightgreen; */
 }
 
 .pokeChart {
     width: 100%;
     height: auto;
     display: flex;
-    justify-content: center;
-    flex-direction: row;    
-    border-color: black;
-    border-style: solid;
-    border-top-width: 1px;
-    border-bottom-width: 1px;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;    
 }
 
 .pokeStats {
-    width: 65%;
-    height: auto;
     display: flex;
     flex-direction: column;
     text-align: center;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 18px;
+    padding: 5px;
+    margin: 5px;
+
 }
 
 .image {
-    width: 75%;
-    height: auto;
     align-self: center;
 }
 
 .paragraph {
-    font-size: xx-large;
+    font-size: large;
     font-weight: bold;
 }
 
@@ -41,3 +46,6 @@
 
 }
 
+.cardBackground {
+    background-color: lightslategray;
+}
