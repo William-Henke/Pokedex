@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Pokedex</title>
+    <title id="title">Pokedex</title>
     <link rel="stylesheet" type="text/css" href="reset.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
@@ -13,13 +13,22 @@
         </header>
         <container id="pokeSearch" class="container">
             <div>
-                <input id="searchBar" type="text">
-                <button id="searchButton">Search</button>
-                <button id="lessButton"><</button>
-                <div></div>
-                <button id="moreButton">></button>
-                <button>Filter</button>
-                <button id="morePokemon">Let's get started!</button>
+                <input id="searchBar" class="hidden" type="text">
+                <button id="searchButton" class="hidden">Search</button>
+                <button id="lessButton" class="hidden"><</button>
+                <div class="hidden"></div>
+                <button id="moreButton" class="hidden">></button>
+                <button class="hidden">Filter</button>
+
+                <h1 class="centering">Welcome to the Pokedex! Click the button below to get started.</h1>
+                <center>
+                    <button id="morePokemon" class="shown centering">Let's get started!</button>
+                    <div id="heightFilter" class="slidecontainer hidden" >
+                        <p id="heightSliderTitle">Weight Slider</p>
+                        <input id="weightFilterSlider" type="range" min="1" max="1809" value="904">
+                    </div>
+                </center>
+
             </div>
         </container>
         <container id="pokePart">
