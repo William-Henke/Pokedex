@@ -40,6 +40,7 @@
 .paragraph {
     font-size: large;
     font-weight: bold;
+    text-transform: capitalize;
 }
 
 .informationButton {
@@ -47,7 +48,7 @@
 }
 
 .cardBackground {
-    background-color: lightslategray;
+    background-color: #f7f379;
 }
 
 .hidden {
